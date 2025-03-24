@@ -1,11 +1,16 @@
 {
-  "name": "form-dispatcher",
+  "name": "post-dispatcher",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "express": "^4.21.2"
+  }
 }
