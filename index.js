@@ -11,6 +11,8 @@ app.use(express.json());
 // List of target URLs to dispatch the data to, read from JSON file
 const targetUrls = JSON.parse(fs.readFileSync('targetUrls.json', 'utf8'));
 
+app.get("/health", (req, res) => res.status(200).send("ok"));
+
 // POST route to receive data and dispatch it
 app.post('/', async (req, res) => {
   const formData = req.body;
